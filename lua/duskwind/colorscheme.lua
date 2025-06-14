@@ -3,8 +3,8 @@ local config = require 'duskwind.config'
 local colorscheme = {}
 
 if vim.o.background == 'light' then
-  -- Light mode (I kept some values from your example but tweaked to fit your palette)
-  colorscheme.editorBackground = config.transparent and 'none' or '#f6f6f6'
+  -- TODO: formalize light theme
+  colorscheme.editorBackground = config.transparent and 'none' or '#d4cbe5'
   colorscheme.sidebarBackground = '#dddddd'
   colorscheme.popupBackground = '#eeeeee'
   colorscheme.floatingWindowBackground = '#e0e0e0'
@@ -38,14 +38,13 @@ if vim.o.background == 'light' then
   colorscheme.foregroundEmphasis = '#000000'
   colorscheme.terminalGray = '#333333'
 else
-  -- Dark mode (your adapted palette)
-  colorscheme.editorBackground = config.transparent and 'none' or '#0a0a18' -- base bg
+  colorscheme.editorBackground = config.transparent and 'none' or '#0a0a18'
   colorscheme.sidebarBackground = '#1a1a1a'
   colorscheme.popupBackground = '#292929'
   colorscheme.floatingWindowBackground = '#383838'
   colorscheme.menuOptionBackground = '#282828'
 
-  colorscheme.mainText = '#c8c8ca' -- foreground
+  colorscheme.mainText = '#c8c8ca'
   colorscheme.emphasisText = '#fafafa'
   colorscheme.commandText = '#e0e0e0'
   colorscheme.inactiveText = '#484848'
@@ -58,17 +57,17 @@ else
   colorscheme.focusedBorder = '#444444'
   colorscheme.emphasizedBorder = '#363636'
 
-  colorscheme.syntaxError = '#ff1a2b' -- bright red cursor color inspired
-  colorscheme.syntaxFunction = '#8f5295' -- blue-purple
-  colorscheme.warningText = '#ff9800' -- orange warning (same as original)
-  colorscheme.syntaxKeyword = '#c8679a' -- magenta-ish
-  colorscheme.linkText = '#f96c8f' -- pinkish cyan
-  colorscheme.stringText = '#7594b4' -- greenish blue for strings
+  colorscheme.syntaxError = '#ff1a2b'
+  colorscheme.syntaxFunction = '#8f5295'
+  colorscheme.warningText = '#ff9800'
+  colorscheme.syntaxKeyword = '#c8679a'
+  colorscheme.linkText = '#f96c8f'
+  colorscheme.stringText = '#7594b4'
   colorscheme.warningEmphasis = '#cd9731'
   colorscheme.successText = '#22863a'
   colorscheme.errorText = '#d32f2f'
   colorscheme.specialKeyword = '#800080'
-  colorscheme.commentText = '#727272' -- muted gray for comments
+  colorscheme.commentText = '#727272'
   colorscheme.syntaxOperator = '#bbbbbb'
   colorscheme.foregroundEmphasis = '#fafafa'
   colorscheme.terminalGray = '#5c5c5c'
