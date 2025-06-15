@@ -63,7 +63,7 @@ local function set_groups()
       fg = colorscheme.editorBackground,
     },
     Substitute = { link = 'IncSearch' },
-    CursorLineNr = { fg = colorscheme.commentText },
+    CursorLineNr = { fg = colorscheme.syntaxError },
     MatchParen = { fg = colorscheme.syntaxError, bg = bg },
     ModeMsg = { link = 'Normal' },
     MsgArea = { link = 'Normal' },
@@ -129,13 +129,13 @@ local function set_groups()
     Property = { fg = colorscheme.syntaxFunction },
     Field = { link = 'Property' },
     Parameter = { fg = colorscheme.mainText },
-    Statement = { fg = colorscheme.syntaxError },
-    Conditional = { fg = colorscheme.syntaxError },
+    Statement = { fg = colorscheme.syntaxKeyword },
+    Conditional = { fg = colorscheme.syntaxKeyword },
     -- Repeat = {},
     Label = { fg = colorscheme.syntaxFunction },
-    Operator = { fg = colorscheme.syntaxError },
+    Operator = { fg = colorscheme.syntaxOperator },
     Keyword = { link = 'Statement', italic = config.italics.keywords or false },
-    Exception = { fg = colorscheme.syntaxError },
+    Exception = { fg = colorscheme.warningText },
 
     PreProc = { link = 'Keyword' },
     -- Include = {},
@@ -225,7 +225,7 @@ local function set_groups()
     ['@comment'] = { link = 'Comment' },
     ['@punctuation'] = { link = 'Punctuation' },
     ['@punctuation.bracket'] = { fg = colorscheme.warningEmphasis },
-    ['@punctuation.delimiter'] = { fg = colorscheme.syntaxError },
+    ['@punctuation.delimiter'] = { fg = colorscheme.syntaxOperator },
     ['@punctuation.terminator.statement'] = { link = 'Delimiter' },
     ['@punctuation.special'] = { fg = colorscheme.syntaxError },
     ['@punctuation.separator.keyvalue'] = { fg = colorscheme.syntaxError },
@@ -345,7 +345,7 @@ function theme.colorscheme()
 
   vim.g.VM_theme_set_by_colorscheme = true
   vim.o.termguicolors = true
-  vim.g.colors_name = 'my-theme'
+  vim.g.colors_name = 'duskwind'
 
   set_terminal_colors()
   set_groups()

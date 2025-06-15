@@ -59,10 +59,10 @@ else
 
   colorscheme.syntaxError = '#ff1a2b'
   colorscheme.syntaxFunction = '#8f5295'
-  colorscheme.warningText = '#ff9800'
+  colorscheme.warningText = '#f29718'
   colorscheme.syntaxKeyword = '#c8679a'
   colorscheme.linkText = '#f96c8f'
-  colorscheme.stringText = '#7594b4'
+  colorscheme.stringText = '#f78c6c'
   colorscheme.warningEmphasis = '#cd9731'
   colorscheme.successText = '#22863a'
   colorscheme.errorText = '#d32f2f'
